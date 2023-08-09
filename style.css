@@ -34,11 +34,11 @@ footer {
 
 a {
   text-decoration: none;
-  color: #55257d;
+  color: #1c338e;
 }
 
 a:hover {
-  color: #8d51b7;
+  color: rgb(75, 0, 130);
 }
 
 .image_row {
