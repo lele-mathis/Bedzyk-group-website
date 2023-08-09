@@ -41,6 +41,12 @@ a:hover {
   color: #8d51b7;
 }
 
+.image_row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
 #message207673404 {
   padding-right: 0pt;
   padding-left: 0pt;
