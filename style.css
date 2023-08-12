@@ -11,11 +11,11 @@ p {
 
 a {
   text-decoration: none;
-  color: #55257d;
+  color: #1c338e;
 }
 
 a:hover {
-  color: #8d51b7;
+  color: rgb(75, 0, 130);
 }
 
 h3 {
@@ -30,15 +30,6 @@ footer {
   font-size: x-small;
   font-weight: bold;
   margin: 16px;
-}
-
-a {
-  text-decoration: none;
-  color: #1c338e;
-}
-
-a:hover {
-  color: rgb(75, 0, 130);
 }
 
 .image_row {
@@ -85,6 +76,7 @@ body {
   height: 100%;
 }
 
+/** For publications page **/
 ul.tab {
   list-style-type: none;
   margin: 0;
