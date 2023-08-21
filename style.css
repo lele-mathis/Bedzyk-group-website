@@ -19,7 +19,7 @@ a:hover {
 }
 
 a:active {
-  color: #8f53ba;
+  color: rgb(75, 0, 130);
 }
 
 /** header styling **/
@@ -33,7 +33,7 @@ a:active {
   align-items: center;
 }
 .top-banner {
-  height: 155px;
+  height: 120px;
 }
 #line1 {
   height: 18px;
@@ -54,12 +54,12 @@ a:active {
   flex-wrap: wrap;
 }
 .navlink {
-  margin-top: 5px;
-  font-size: large;
+  margin: 5px;
+  font-size: larger;
 }
 .navlink-active {
-  margin-top: 5px;
-  font-size: large;
+  margin: 5px;
+  font-size: larger;
   color: rgb(75, 0, 130);
 }
 .navlink:hover {
@@ -82,6 +82,12 @@ a:active {
   }
   #line3 {
     height: 5px;
+  }
+  .navlink {
+    margin: 3px;
+  }
+  .navlink-active {
+    margin: 3px;
   }
 }
 
