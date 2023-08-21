@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 
-
 <head>
   <link rel="icon" type="image/png" href="http://bedzyk.mccormick.northwestern.edu/graphics/favicon.png" />
   <title>Links | Bedzyk Research Group</title>
@@ -19,99 +18,56 @@
   <link rel="stylesheet" href="style.css">
 </head>
 
-
 <body style="background-image:url(background%20graphics/bkg1.png); background-color: rgb(244, 242, 255);">
   <header>
-    <!-- Bedzyk Group Banner -->
-    <table width=100% border="0" style="border-collapse: collapse; background-color: #250b54" border="0" cellpadding="0"
-      cellspacing="0" alt="The Bedzyk Group Banner">
-      <tr>
-        <td align="center"><img style="height: 155px; margin: 5px 5px 5px 50px" alt="Northwestern logo"
-            src="graphics/NU_icon.png"></td>
-        <td align="center"><img style="height: 155px; margin: 5px" alt="The Bedzyk Group"
-            src="graphics/TheBedzykGroup_text.png"></td>
-        <td align="center"><img style="height: 155px; margin: 5px 50px 5px 5px" alt="Argonne National Lab logo"
-            src="graphics/ANL_icon.png"></td>
-      </tr>
-    </table>
-    <div style="background-color: #8f53ba; height: 18px"></div>
-    <div style="background-color: white; height: 6px"></div>
-    <div style="background-color: #56227e; height: 10px"></div>
-    <div style="background-color: white; height: 5px"></div>
+    <div id="Bedzyk-group-banner">
+      <img class="top-banner" style="margin: 5px" alt="Northwestern logo" src="graphics/NU_icon.png" />
+      <img class="top-banner" alt="The Bedzyk Group" src="graphics/TheBedzykGroup_text.png" />
+      <img class="top-banner" style="margin: 5px" alt="Argonne National Lab logo" src="graphics/ANL_icon.png" />
+    </div>
+    <div id="line1" style="background-color: #8f53ba;"></div>
+    <div id="line2" style="background-color: white;"></div>
+    <div id="line3" style="background-color: #56227e;"></div>
 
-    <style>
-      body {
-        overflow-x: hidden !important;
-        margin: 0;
-        width: 100%;
-        height: 100%;
-      }
-
-      .container {
-        max-width: 100% !important;
-        overflow-x: hidden !important;
-      }
-
-      h2 {
-        font-size: 13pt;
-      }
-
-      h3 {
-        font-size: 11pt;
-        margin-bottom: 0;
-      }
-
-      ul {
-        margin: 0;
-        padding-left: 14pt;
-      }
-    </style>
-
-    <div align="center">
-      <table style="border-collapse: collapse;" id="AutoNumber1" border="0" bordercolor="#111111" cellpadding="0"
-        cellspacing="0" width="90%">
-        <tbody>
-          <nav> <!-- Navigation links-->
-
-            <tr>
-              <td>
-                <div style="text-align: center;"><a href="index.html"
-                    style="font-family: Arial, Helvetica, sans-serif; font-size: 16pt;">HOME</a></div>
-              </td>
-              <td>
-                <div style="text-align: center;"><a
-                    href="http://www.mccormick.northwestern.edu/research-faculty/directory/profiles/bedzyk-michael.html"
-                    alt="BEDZYK" style="font-family: Arial, Helvetica, sans-serif; font-size: 16pt;">BEDZYK</a>
-                </div>
-              </td>
-              <td>
-                <div style="text-align: center;"><a href="members.html"
-                    style="font-family: Arial, Helvetica, sans-serif; font-size: 16pt;">MEMBERS</a></div>
-              </td>
-              <td>
-                <div style="text-align: center;"><a href="research.html"
-                    style="font-family: Arial, Helvetica, sans-serif; font-size: 16pt;">RESEARCH</a></div>
-              </td>
-              <td>
-                <div style="text-align: center">
-                  <a href="/equipment.html"
-                    style="font-family: Arial, Helvetica, sans-serif; font-size: 16pt;">EQUIPMENT</a>
-                </div>
-              </td>
-              <td>
-                <div style="text-align: center;"><a href="publications.html"
-                    style="font-family: Arial, Helvetica, sans-serif; font-size: 16pt;">PUBLICATIONS</a></div>
-              </td>
-              <td>
-                <div style="text-align: center;"><a href="links.html"
-                    style="font-family: Arial, Helvetica, sans-serif; font-size: 16pt;color:#56227e">LINKS</a>
-                </div>
-              </td>
-            </tr>
-          </nav>
-        </tbody>
-      </table>
+    <nav id="main-navigation">
+      <a href="/index.html" class="navlink">HOME</a>
+      <a href="http://www.mccormick.northwestern.edu/research-faculty/directory/profiles/bedzyk-michael.html"
+        alt="BEDZYK" class="navlink">BEDZYK</a>
+      <a href="/members.html" class="navlink">MEMBERS</a>
+      <a href="/research.html" class="navlink">RESEARCH</a>
+      <a href="/equipment.html" class="navlink">EQUIPMENT</a>
+      <a href="/publications.html" class="navlink">PUBLICATIONS</a>
+      <a href="/links.html" class="navlink-active">LINKS</a>
+    </nav>
   </header>
+
+  <style>
+    body {
+      overflow-x: hidden !important;
+      margin: 0;
+      width: 100%;
+      height: 100%;
+    }
+
+    .container {
+      max-width: 100% !important;
+      overflow-x: hidden !important;
+    }
+
+    h2 {
+      font-size: 13pt;
+    }
+
+    h3 {
+      font-size: 11pt;
+      margin-bottom: 0;
+    }
+
+    ul {
+      margin: 0;
+      padding-left: 14pt;
+    }
+  </style>
 
   <main style="margin-left:5%;margin-right:5%">
     <h1 align='center' style="margin-bottom:0">Links</h1>
@@ -123,7 +79,7 @@
             <div align="left">
               <h2 style="color: rgb(75,0,130); font-style: italic; margin-bottom:0">Northwestern University Affiliations
               </h2>
-              <b style="font-size: 12;">(Click on each to find out more)<br></b>
+              <b style="font-size: 12">(Click on each to find out more)<br></b>
 
               <a href="https://www.northwestern.edu/">
                 <h3>Northwestern University Home</h3>
@@ -254,7 +210,7 @@
       <br>
       Cook Hall, 2220 Campus Drive, Evanston, Illinois 60208, USA
       <br><br>
-      Last updated on August 9, 2023
+      Last updated on August 21, 2023
     </div>
   </footer>
 </body>

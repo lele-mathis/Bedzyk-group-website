@@ -18,6 +18,73 @@ a:hover {
   color: rgb(75, 0, 130);
 }
 
+a:active {
+  color: #8f53ba;
+}
+
+/** header styling **/
+#Bedzyk-group-banner {
+  background-color: #250b54;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  align-items: center;
+}
+.top-banner {
+  height: 155px;
+}
+#line1 {
+  height: 18px;
+}
+#line2 {
+  height: 6px;
+}
+#line3 {
+  height: 10px;
+}
+
+#main-navigation {
+  max-width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.navlink {
+  margin-top: 5px;
+  font-size: large;
+}
+.navlink-active {
+  margin-top: 5px;
+  font-size: large;
+  color: rgb(75, 0, 130);
+}
+.navlink:hover {
+  color: rgb(75, 0, 130);
+}
+.navlink:active {
+  color: rgb(75, 0, 130);
+}
+
+/* on mobile only */
+@media only screen and (max-width: 800px) {
+  .top-banner {
+    height: 65px;
+  }
+  #line1 {
+    height: 9px;
+  }
+  #line2 {
+    height: 3px;
+  }
+  #line3 {
+    height: 5px;
+  }
+}
+
 h3 {
   margin-bottom: 8px;
 }
