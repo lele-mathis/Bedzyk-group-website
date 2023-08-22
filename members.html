@@ -18,7 +18,7 @@
   <link rel="stylesheet" href="style.css">
 </head>
 
-<body style="background-color: rgb(244, 242, 255);">
+<body>
   <header>
     <div id="Bedzyk-group-banner">
       <img class="top-banner" style="margin: 5px" alt="Northwestern logo" src="graphics/NU_icon.png" />
@@ -60,6 +60,12 @@
   </header>
 
   <style>
+    /*styling for slide div */
+    .mySlides {
+      display: flex;
+      justify-content: center;
+    }
+
     /* sizing for slide images */
     .slides {
       height: 400px;
@@ -97,12 +103,10 @@
 
     /* Caption text */
     .text {
-      color: #FFFFFF;
+      color: black;
       font-size: 20px;
       padding: 8px 12px;
-      position: absolute;
-      bottom: 32px;
-      width: 100%;
+      position: relative;
       text-align: center;
     }
 
@@ -158,30 +162,31 @@
     }
   </style>
 
-  <div class="slideshow-container" align="center">
-    <div class="mySlides fade">
-      <div class="numbertext"></div>
-      <img src="graphics/Joey_Bedzyk_July2023.jpg" class="slides" align="middle" class="slides">
-      <div class="text">July 2023 near Prof. Bedzyk's house, Joey receives his graduation gift<br></div>
-    </div>
-
-    <div class="mySlides fade">
-      <div class="numbertext"></div>
-      <img src="graphics/Roger_Hilliard.jpg" class="slides" align="middle" class="slides">
-      <div class="text">Roger wins 3rd place at the Hilliard Symposium, May 2023<br></div>
-    </div>
-
-    <div class="mySlides fade">
-      <div class="numbertext"></div>
-      <img src="graphics/Group%20photos%20new/Group_Photo_Apr2023.jpg" class="slides" align="middle" class="slides">
-      <div class="text">April 2023 at Prof. Bedzyk's house<br></div>
-    </div>
-
+  <main>
     <div class="slideshow-container" align="center">
       <div class="mySlides fade">
         <div class="numbertext"></div>
+        <img src="graphics/Joey_Bedzyk_July2023.jpg" class="slides" align="middle">
+        <div class="text">July 2023 near Prof. Bedzyk's house: Joey receives his graduation gift</div>
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext"></div>
+        <img src="graphics/Roger_Hilliard.jpg" class="slides" align="middle">
+        <div class="text" align="middle">May 2023 at Northwestern: Roger wins 3rd place at the Hilliard Symposium <br>
+        </div>
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext"></div>
+        <img src="graphics/Group%20photos%20new/Group_Photo_Apr2023.jpg" class="slides" align="middle" class="slides">
+        <div class="text">April 2023 at Prof. Bedzyk's house<br></div>
+      </div>
+
+      <div class="mySlides fade">
+        <div class="numbertext"></div>
         <img src="graphics/Group%20photos%20new/Group_Photo_Apr2023-2.jpg" class="slides" align="middle" class="slides">
-        <div class="text">April 2023 at Prof. Bedzyk's house, Elise receives her graduation gift<br></div>
+        <div class="text">April 2023 at Prof. Bedzyk's house: Elise receives her graduation gift</div>
       </div>
 
       <div class="mySlides fade">
@@ -193,7 +198,7 @@
       <div class="mySlides fade">
         <div class="numbertext"></div>
         <img src="graphics/Group%20photos%20new/KatherineHarmon.png" class="slides" align="middle" class="slides">
-        <div class="text"> <br> </div>
+        <div class="text">February 2021 at Northwestern</div>
       </div>
 
       <div class="mySlides fade">
@@ -205,15 +210,15 @@
       <div class="mySlides fade">
         <div class="numbertext"></div>
         <img src="graphics/Group%20photos%20new/Group_Photo_July2020.png" class="slides" align="middle">
-        <div class="text">July 2020 via Zoom <br> </div>
+        <div class="text">July 2020 via Zoom </div>
       </div>
 
       <div class="mySlides fade">
         <div class="numbertext"></div>
         <img src="graphics/Group%20photos%20new/Group_Photo_May2019.png" align="middle" class="slides">
-        <div class="text">May 2019 at Northwestern University <br>
-          Starting from left: Guena, Achari, Mike,Anusheela, Kathy, Roger, Elise, Bruce, Joey, <br>
-          Rachel, Carlos, Sumit, Yanna, Anthony, Jerry</div>
+        <div class="text">May 2019 at Northwestern University</div>
+        <!-- Starting from left: Guena, Achari, Mike, Anusheela, Kathy, Roger, Elise, Bruce, Joey,
+        Rachel, Carlos, Sumit, Yanna, Anthony, Jerry -->
       </div>
 
 
@@ -256,20 +261,20 @@
       <div class="mySlides fade">
         <div class="numbertext"></div>
         <img src="graphics/Group%20photos%20new/2019_SiliconValley_reunion.png" align="middle" class="slides">
-        <div class="text"></div>
+        <div class="text"><br></div>
       </div>
 
       <div class="mySlides fade">
         <div class="numbertext"></div>
         <img src="graphics/Group%20photos%20new/2019_SiliconValley_reunion1.png" align="middle" class="slides">
-        <div class="text"></div>
+        <div class="text"><br></div>
       </div>
 
       <div class="mySlides fade">
         <div class="numbertext"></div>
         <img src="graphics/Group%20photos%20new/group_photo2018.png" align="middle" class="slides">
-        <div class="text">February 2018 at Mt. Everest Restaurant, Evanston <br>celebrating Prof. Bedzyk's birthday and
-          Gavin's farewell</div>
+        <div class="text">February 2018 at Mt. Everest Restaurant, Evanston: Celebrating Prof. Bedzyk's birthday
+          and Gavin's farewell</div>
       </div>
 
       <div class="mySlides fade">
@@ -329,10 +334,13 @@
       <div class="mySlides fade">
         <div class="numbertext"></div>
         <img src="graphics/SXNS2010_1.png" align="middle" class="slides">
-        <div class="text">On the left: Professor Bedzyk giving a speech during the banquet of International Conference
-          on <br>
-          Surface X-ray and Neutron Scattering (SXNS 2010) <br>
-          On the right: Curtis Leung, Jon Emery and Marie Zarrouati in the banquet of SXNS 2010</div>
+        <div class="text">July 2010 at Northwestern: International Conference on Surface X-ray and Neutron Scattering
+          (SXNS 2010)</div>
+        <!--
+      <div class="text">International Conference of SXNS 2010: Left: Prof. Bedzyk at the banquet of International Conference
+        on Surface X-ray and Neutron Scattering (SXNS 2010) <br>
+        Right: Curtis Leung, Jon Emery and Marie Zarrouati in the banquet of SXNS 2010</div>
+      -->
       </div>
 
       <div class="mySlides fade">
@@ -343,43 +351,42 @@
 
       <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
       <a class="next" onclick="plusSlides(1)">&#10095;</a>
-
     </div>
 
-    <br>
-
-    <div style="text-align:center">
-      <span class="dot" onclick="currentSlide(1)"></span>
-      <span class="dot" onclick="currentSlide(1)"></span>
-      <span class="dot" onclick="currentSlide(1)"></span>
-      <span class="dot" onclick="currentSlide(1)"></span>
-      <span class="dot" onclick="currentSlide(1)"></span>
-      <span class="dot" onclick="currentSlide(1)"></span>
-      <span class="dot" onclick="currentSlide(1)"></span>
-      <span class="dot" onclick="currentSlide(1)"></span>
-      <span class="dot" onclick="currentSlide(1)"></span>
-      <span class="dot" onclick="currentSlide(1)"></span>
-      <span class="dot" onclick="currentSlide(1)"></span>
-      <span class="dot" onclick="currentSlide(1)"></span>
-      <span class="dot" onclick="currentSlide(1)"></span>
-      <span class="dot" onclick="currentSlide(1)"></span>
-      <span class="dot" onclick="currentSlide(1)"></span>
-      <span class="dot" onclick="currentSlide(1)"></span>
-      <span class="dot" onclick="currentSlide(1)"></span>
-      <span class="dot" onclick="currentSlide(1)"></span>
-      <span class="dot" onclick="currentSlide(1)"></span>
-      <span class="dot" onclick="currentSlide(1)"></span>
-      <span class="dot" onclick="currentSlide(1)"></span>
-      <span class="dot" onclick="currentSlide(1)"></span>
-      <span class="dot" onclick="currentSlide(1)"></span>
-      <span class="dot" onclick="currentSlide(1)"></span>
-      <span class="dot" onclick="currentSlide(1)"></span>
-      <span class="dot" onclick="currentSlide(1)"></span>
-      <span class="dot" onclick="currentSlide(1)"></span>
-      <span class="dot" onclick="currentSlide(1)"></span>
-      <span class="dot" onclick="currentSlide(1)"></span>
-      <span class="dot" onclick="currentSlide(1)"></span>
-    </div>
+    <!-- Does this do anything?
+  <div style="text-align:center">
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(1)"></span>
+    <span class="dot" onclick="currentSlide(1)"></span>
+  </div>
+  -->
 
     <script>
       var slideIndex = 1;
@@ -429,17 +436,15 @@
           <tbody>
             <tr>
               <td width="14%">
-                <img style="width: 150px;"
+                <img class="headshot"
                   alt="Headshot of Prof. Bedzyk lit from the left side with a window in the background"
                   src="graphics/headshots/bedzyk-michael-portrait-profile.jpg"><br>
               </td>
               <td>
                 <h4 style="color: rgb(75,0,130);">Prof. Michael J. Bedzyk</h4>
-                <font size="-1" style="color: rgb(75,0,130);">Professor of Materials Science and Engineering and (by
-                  courtesy)
-                  Co-Director, Northwestern Synchroton Research Center<br>
-                  Chair of Materials Science and Engineering<br>
-                  <br>
+                <font size="-1" style="color: rgb(75,0,130);font-weight:bold">Professor of Materials Science &amp;
+                  Engineering<br>
+                  (by courtesy) Co-Director of the Northwestern Synchroton Research Center<br>
                 </font>
                 <div style="text-align: left;" style="color: rgb(75,0,130);">
                   <font size="-1" style="color: rgb(75,0,130);">Office: Cook Hall Room 1139</font><br>
@@ -449,14 +454,11 @@
                       <font color="#0606b5">bedzyk@northwestern.edu</font>
                     </a></font><br>
                 </div>
-
-
                 <font size="3">
                   <a href="files/BedzykCV2018.pdf">
                     <img style="border: 0px solid ; width: 32px; height: 32px;" alt="download PDF"
                       src="graphics/L_ACP_PDF2.jpg" align="middle">
                   </a>
-                </font>
                 </font>
                 <font size="-1">
                   <a href="files/BedzykCV2018.pdf">CV (.pdf)</a><br>
@@ -465,25 +467,23 @@
             </tr>
           </tbody>
         </table>
-        </font>
       </div>
 
       <hr style="width: 100%; height: 2px;">
       <div name="Research Professor">
-        <h3 style="color: rgb(75,0,130);">Research Assistant
-          Professor</h3>
+        <h3 style="color: rgb(75,0,130);">Research Assistant Professor</h3>
         <table border="0" width="100%">
           <tbody style="color: rgb(75,0,130);">
             <tr>
               <td>
-                <img style="width: 145px;"
-                  alt="Headshot of Sumit smiling with a corkboard and tan wall in the background"
+                <img class="headshot" alt="Headshot of Sumit smiling with a corkboard and tan wall in the background"
                   src="graphics/headshots/sumit2.jpg">
               </td>
               <td>
                 <h4>Dr. Sumit Kewalramani</h4>
                 <font size="-1">
                   <b>Research Assistant Professor</b><br>
+                  <b>Manager of the J.B. Cohen X-ray Diffraction Facility</b><br>
                   Materials Science &amp; Engineering<br>
                   Office: Cook 1155A<br>Phone: (847) 491-7677<br>
                 </font>
@@ -491,27 +491,27 @@
                   <font color="#0606b5" size="2">s-kewalramani@northwestern.edu</font>
                 </a>
               </td>
-
-              <!-- placeholder cell -->
-              <td width="20%"><br></td>
-              <td width="70%"><br></td>
-              <td width="50%"><br></td>
-              <td width="70%"><br></td>
+            </tr>
+            <!-- Set cell widths -->
+            <tr>
+              <td width="14%"></td>
+              <td width="86"></td>
             </tr>
           </tbody>
         </table>
       </div>
+
       <hr style="width: 100%; height: 2px;"><br>
+
       <div name="Research Associates and Postdocs">
         <h3 style="color: rgb(75,0,130);margin-top:0">Research Associates and Postdoctoral Fellows</h3>
 
         <table border="0" width="100%">
           <tbody style="color: rgb(75,0,130);">
             <td>
-              <img style="width: 145px;"
-                alt="Headshot of Guena wearing sunglasses with a tree-covered hill in the background"
-                src="graphics/headshots/Guena.jpg"></font>
-              </font>
+              <img class="headshot"
+                alt="Guena outdoors wearing cap, backpack, and shoulder bag containing a chihuahua with its head popping out"
+                src="graphics/headshots/Guena2.jpg">
             </td>
             <td>
               <h4>Dr. Guennadi A Evmenenko</h4>
@@ -520,22 +520,18 @@
                 Materials Science &amp; Engineering<br>
                 Office: Cook 1155A<br>Phone: (847) 491-7677<br>
               </font>
-
               <a href="mailto:g-evmenenko@northwestern">
                 <font color="#0606b5" size="2">g-evmenenko@northwestern.edu</font>
               </a>
-              </font>
             </td>
 
             <td>
-              <img style="width: 145px;"
+              <img class="headshot"
                 alt="Headshot of Supriyo slightly smiling looking slighty to the left with greenery in the background"
                 src="graphics/headshots/Supriyo.JPG">
             </td>
             <td>
-
               <h4>Dr. Supriyo Majumder</h4>
-              </font>
               <font size="-1">
                 <b>Postdoctoral Fellow</b><br>
                 Materials Science &amp; Engineering<br>
@@ -558,32 +554,30 @@
 
           </tbody>
         </table>
-        </font>
       </div>
 
       <hr style="width: 100%; height: 2px;">
 
       <div name="Grad Students">
-        <h3 style="color: rgb(75,0,130);margin-bottom:0">Graduate Students</h3>
+        <h3 style="color: rgb(75,0,130);margin-bottom:0">PhD Students</h3>
 
         <table border="0" width="100%">
           <tbody style="color: rgb(75,0,130);">
             <!--Setting cell widths-->
             <tr>
-              <td width="14%"><br></td>
-              <td width="36%"><br></td>
-              <td width="14%"><br></td>
-              <td width="36%"><br></td>
+              <td width="14%"></td>
+              <td width="36%"></td>
+              <td width="14%"></td>
+              <td width="36%"></td>
             </tr>
 
             <tr><!-- first row of grad students -->
-              <td style="vertical-align: top;">
-                <img style="width: 145px;"
+              <td style="vertical-align: middle;">
+                <img class="headshot"
                   alt="Headshot of Carlos looking straight forward slightly smiling with a plain tan background"
                   src="graphics/headshots/Carlos.jpg"><br>
               </td>
               <td style="vertical-align: middle;">
-
                 <h4>Carlos G. Torres</h4>
                 <font size="-1">Materials Science &amp; Engineering<br>
                   Office: Cook 1155<br>Phone: (847) 491-7677<br>
@@ -594,13 +588,12 @@
                 </font>
               </td>
 
-              <td style="vertical-align: top;">
-                <img style="width: 145px;"
+              <td style="vertical-align: middle;">
+                <img class="headshot"
                   alt="Headshot of Roger with a small smile with a white and glass building in the background"
                   src="graphics/headshots/Roger2.jpg"><br>
               </td>
               <td style="vertical-align: middle;">
-
                 <h4>Roger Reinertsen</h4>
                 <font size="-1">Materials Science &amp; Engineering<br>
                   Office: Cook 1155<br>Phone: (847) 491-7677<br>
@@ -613,18 +606,15 @@
             <tr> <!-- vertical whitespace? -->
               <td><br></td>
               <td><br></td>
-              <td style="vertical-align: top;"><br></td>
-              <td style="vertical-align: top;"><br></td>
             </tr>
 
             <tr><!-- second row of grad students -->
-              <td style="vertical-align: top;">
-                <img style="width: 145px;"
+              <td style="vertical-align: center;">
+                <img class="headshot"
                   alt="Headshot of David with the left half of his face in shadow with reddish-brown mountains in the background"
                   src="graphics/headshots/David2.png"><br>
               </td>
               <td style="vertical-align: middle;">
-
                 <h4>David Garcia</h4>
                 <font size="-1">Materials Science &amp; Engineering<br>
                   Office: Cook 1155<br>Phone: (847) 491-7677<br>
@@ -635,8 +625,8 @@
                 </font>
               </td>
 
-              <td style="vertical-align: top;">
-                <img style="width: 145px;" alt="Headshot of William in front of The Bean (Cloud Gate) in Chicago"
+              <td style="vertical-align: center;">
+                <img class="headshot" alt="Headshot of William in front of The Bean (Cloud Gate) in Chicago"
                   src="graphics/headshots/William.png"><br>
               </td>
               <td style="vertical-align: middle;">
@@ -655,37 +645,63 @@
           </tbody>
         </table>
       </div>
+      <div id="masters-students">
+        <hr style="width: 100%; height: 2px;">
 
-      <!--Commented out undergrad section -Lele 6/23
-       <hr style="width: 100%; height: 2px;"><br>
-          <td>
-      <big><span style="font-style: italic;"></span></big>
-      <hr style="width: 100%; height: 2px;"><br>
-
-        <p align="justify"><big style="color: rgb(75,0,130);"><big><big><b><i>Undergraduate Students</i></b></big></big></big><br>
-        <br>
-
-          <table border="0" width="45%">
-          	<tbody style="color: rgb(75,0,130);">
-          	
-          	 <tr>
-          		<td style="vertical-align: top;"><img style="width: 148px; height: 150px;" alt="Selin" src="graphics/Selin.jpg"><br>
-            </td>
-            <td style="vertical-align: top;">
-              <b>Selin Huguette Cetin</b><br>
-          		<font   size="-1">Materials Science &amp; Engineering<br>
-              </font></font><a style="color: rgb(0, 0, 153);" href="mailto:selincetin2022@u.northwestern.edu"><small>selincetin2022@u.northwestern.edu</small></a><br>
-              </font></font></font></font></font></font></td>    
-              <td width="20%"><br></td>
-				      <td width="20%"><br></td>
-          		<td width="40%"><br></td>
-          		<td width="50%"><br></td>
-          		<td width="70%"><br></td>
-            </tr>             
-             </tbody></table></font></p>
-      -->
-
-      <br>
+        <h3 style="color: rgb(75,0,130);">Masters Students</h3>
+        <table border="0" width="100%">
+          <tbody style="color: rgb(75,0,130);">
+            <tr>
+              <td style="vertical-align: center;"><img class="headshot" alt=""
+                  src="graphics/headshots/Unnamed_man.png"><br>
+              </td>
+              <td style="vertical-align: top;">
+                <h4>Jack</h4>
+                <font size="-1">Materials Science &amp; Engineering<br></font>
+                <!--
+                  <a style="color: rgb(0, 0, 153);"
+                  href="mailto:selincetin2022@u.northwestern.edu"><small>selincetin2022@u.northwestern.edu</small></a><br>
+                -->
+              </td>
+            </tr>
+            <!-- setting cell widths-->
+            <tr>
+              <td width="14%"></td>
+              <td width="36%"></td>
+              <td width="14%"></td>
+              <td width="36%"></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <hr style="width: 100%; height: 2px;">
+      <div id="undergrad-students">
+        <h3 style="color: rgb(75,0,130);">Undergraduate Students</h3>
+        <table border="0" width="100%">
+          <tbody style="color: rgb(75,0,130);">
+            <tr>
+              <td style="vertical-align: center;"><img class="headshot" alt=""
+                  src="graphics/headshots/Unnamed_girl.png"><br>
+              </td>
+              <td style="vertical-align: top;">
+                <h4>Zahra</h4>
+                <font size="-1">Materials Science &amp; Engineering<br></font>
+                <!--
+                  <a style="color: rgb(0, 0, 153);"
+                  href="mailto:selincetin2022@u.northwestern.edu"><small>selincetin2022@u.northwestern.edu</small></a><br>
+                -->
+              </td>
+            </tr>
+            <!-- setting cell widths-->
+            <tr>
+              <td width="14%"></td>
+              <td width="36%"></td>
+              <td width="14%"></td>
+              <td width="36%"></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
       <hr style="width: 100%; height: 2px;">
 
       <div name="Alumns">
@@ -956,6 +972,7 @@
           Last updated on August 21, 2023
         </div>
       </footer>
+  </main>
 
 </body>
 
