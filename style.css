@@ -1,6 +1,6 @@
 /* temporarily hiding these sections until I have more info */
 #masters-students {
-  display: none;
+  display: float;
 }
 #undergrad-students {
   display: none;
