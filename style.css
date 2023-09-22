@@ -96,7 +96,7 @@ section {
 }
 
 /* on mobile only */
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 800px) {
   .top-banner {
     height: 65px;
   }
@@ -119,6 +119,9 @@ section {
     margin-left: 3%;
     margin-right: 3%;
   }
+  .headshot {
+    width: 145px;
+  }
 }
 
 h3 {
@@ -137,7 +140,7 @@ footer {
 
 /** For members page **/
 .headshot {
-  width: 145px;
+  width: 160px;
 }
 
 .image_row {
